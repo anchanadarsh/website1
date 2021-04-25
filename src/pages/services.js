@@ -1,9 +1,10 @@
 import React from 'react';
+import Banner from '../components/banner';
 
 const Services = () => {
     return ( 
         <div id="services_page">
-            <h1>Services</h1>
+            <Banner imgSrc="images/1.jpg" bannerTitle="Services"/>
         </div>
      );
 }

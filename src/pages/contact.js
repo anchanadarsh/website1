@@ -1,9 +1,10 @@
 import React from 'react';
+import Banner from '../components/banner';
 
 const Contact = () => {
     return ( 
         <div id="contact_page">
-            <h1>Contact</h1>
+            <Banner imgSrc="images/2.jpg" bannerTitle="Contact"/>
         </div>
      );
 }
