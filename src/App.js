@@ -5,6 +5,8 @@ import Contact from './pages/contact';
 import Home from './pages/home';
 import Products from './pages/product';
 import Services from './pages/services';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
