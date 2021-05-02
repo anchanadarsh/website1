@@ -1,12 +1,13 @@
-import React from 'react';
+
 import Banner from '../components/banner';
 
 const Products = () => {
-    return ( 
+
+    return (
         <div id="products_page">
-            <Banner imgSrc="images/3.png" bannerTitle="Products"/>
+            <Banner imgSrc="images/3.png" bannerTitle="Products" />
         </div>
-     );
+    );
 }
- 
+
 export default Products;

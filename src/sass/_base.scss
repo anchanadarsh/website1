@@ -22,6 +22,30 @@ a {
   color: inherit;
 }
 
+.container-fluid {
+  width: 100%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  @extend .container-fluid;
+  margin: auto;
+
+  @media(min-width:768px) and (max-width: 991px) {
+      width: 750px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+      width: 970px;
+  }
+
+  @media (min-width: 1200px) {
+      width: 1170px;
+  }
+}
+
 .navbar_wrap {
   background-color: black;
   color: white;
@@ -29,7 +53,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -60,11 +84,6 @@ a {
     font-weight: 500;
     letter-spacing: 5px;
   }
-}
-
-.container {
-  width: 75%;
-  margin: auto;
 }
 
 img {

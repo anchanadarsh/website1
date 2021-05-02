@@ -4,9 +4,10 @@ import Navbar from './components/navbar';
 import Contact from './pages/contact';
 import Home from './pages/home';
 import Products from './pages/product';
-import Services from './pages/services';
+import Blogs from './pages/blogs';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import BlogDetails from './pages/blog-detail';
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
           <Route path="/" exact component={Home}></Route>
         </Switch>
         <Switch>
-          <Route path="/services" component={Services}></Route>
+          <Route path="/blogs" exact component={Blogs}></Route>
+        </Switch>
+        <Switch>
+          <Route path="/blogs/:id" component={BlogDetails}></Route>
         </Switch>
         <Switch>
           <Route path="/products" component={Products}></Route>
